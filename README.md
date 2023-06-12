@@ -124,3 +124,8 @@ seconds.Y2 = ellipse.Height / 2 + Math.Sin(-15 * Math.PI / 30 + DateTime.Now.Sec
 
 <img src="./img/alarm.gif" width="30%"/>
 
+### Remettre ton travail
+N'oublie pas de soumettre ton travail avec la commande :
+```
+travow submit tpihm5
+```
