@@ -16,6 +16,7 @@ Les fonctionnalités attendues sont les suivantes :
 - Interrompre l'alarme (le signal visual ou sonore) pour remettre l'application dans son état normal
 
 Voici la maquette de ce que nous devrions avoir :
+
 <img src="./img/alarm.png" width="50%"/>
 
 ### Ajouter un Timer
