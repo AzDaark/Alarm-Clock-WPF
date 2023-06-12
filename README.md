@@ -109,7 +109,7 @@ Si je devais transposer le cercle de mon horloge au cercle trigonométrique j’
 
 <img src="./img/cercle_trigo.png" width="30%"/>
 
-Je vous donne le code pour l'aiguille des secondes. En même temps que tu le copie-colles au bon endroit, essaye de le comprendre. Tu devras également le faire pour les minutes et les heures. Attention, les valeurs dans l'équation trigonométrique pourront être différentes pour les autres aiguilles. 
+Je vous donne le code pour l'aiguille des secondes. En même temps que vous le copiez-collez au bon endroit, essayez de le comprendre. Vous devrez également le faire pour les minutes et les heures. Attention, les valeurs dans l'équation trigonométrique pourront être différentes pour les autres aiguilles. 
 
 Comme je vous le disais plus haut, lorsque l’aiguille des secondes pointe sur n secondes, alors l’angle ne vaut pas juste n * π/30 mais π/2-(n * π/30) radians (c'est parce que l'origine du cercle est à droite et que le sens de rotation est inverse par rapport au sens des aiguilles). N'hésitez pas à faire un dessin pour comprendre.
 
