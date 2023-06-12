@@ -10,7 +10,7 @@ S'il y a bien une chose que les étudiants détestent dans la vie, c'est d'arriv
 
 Voici la maquette de ce que nous devrions avoir :
 
-<img src="./img/alarm.png" width="50%"/>
+<img src="./img/alarm.png" width="30%"/>
 
 Les fonctionnalités attendues sont les suivantes :
 - Afficher une liste des alarmes actives
