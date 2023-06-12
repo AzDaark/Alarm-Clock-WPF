@@ -20,7 +20,67 @@ Voici la maquette de ce que nous devrions avoir :
 
 ### Ajouter un Timer
 
-Pour ajouter un Timer dans ton application, tu dois le faire depuis le code C#.
+Pour ajouter un Timer dans ton application, tu dois le faire depuis le code C#. Tu peux commencer par déclarer un attribut de ta classe du type "DispatcherTimer" :
+```
+ DispatcherTimer timer;
+```
+
+Et ensuite, dans ta méthode d'initialisation (par exemple la procédure événementielle associée à l'événement "Loaded" de la fenêtre), tu peux initialiser ton timer : 
+```
+timer = new DispatcherTimer();
+//Définit combien de secondes entre chaque déclenchement de l'événement Tick 
+timer.Interval = TimeSpan.FromSeconds(1);
+//Associe une procédure événementielle à l'événement Tick du Timer, il te faut écrire cette procédure événementielle
+timer.Tick += timer_Tick;
+//Lance le Timer, obligatoire sinon rien ne se passe
+timer.Start();
+```
+
+Dans le code de la procédure événementielle "timer_Tick", c'est ici que tu devras changer les coordonnées des aiguilles de l'horloge, et vérifier si une alarme doit se déclencher
 
 ### Le dessin de l'horloge
 Pour dessiner correctement l'horloge, nous allons avoir besoin d'utiliser un peu de trigonométrie!
+
+Tout d'abord, tu vas avoir besoin de déclarer des attributs pour chaque partie du dessin (tu pourrais ensuite le faire différemment) :
+```
+//Un cercle
+private Ellipse ellipse;
+//3 aiguilles
+private Line minutes;
+private Line hours;
+private Line seconds;
+```
+
+En WPF, les éléments de dessin sont ajoutés dans l'interface comme des contrôles. Il nous faut donc un endroit dans l'interface où ajouter ces éléments. Dans le XAML, ajoute un contrôle de type Canvas (de préférence de taille 300x300 par exemple) qui nous servira de zone de dessin pour l'horloge. Change la propriété Name de ce Canvas en "CNVClock". Maintenant, depuis le code C#, nous pouvons y accéder.
+
+Dans ta méthode d'initialisation (par exemple la procédure événementielle associée à l'événement "Loaded" de la fenêtre), tu peux initaliser les éléments de dessin et les ajouter à ton Canvas. Ici je ne te montre que l'initalisation du cercle et de l'aiguille des secondes (il te faudra bien sûr le faire pour les deux autres aiguilles). Le cercle ici fait la même taille que le Canvas, ça nous arrange bien:
+```
+ellipse = new Ellipse();
+ellipse.Width = 300;
+ellipse.Height = 300;
+ellipse.Stroke = Brushes.Gray; ellipse.StrokeThickness = 1;
+CNVClock.Children.Add(ellipse);
+```
+Pour les aiguilles, nous avons besoin de définir le point d'origine du trait (X1,Y1) ainsi que le point d'arrivé du trait (X2,Y2).
+
+```
+seconds = new Line();
+seconds.Stroke = Brushes.Red; seconds.StrokeThickness = 1;
+//Le point d'origine est au centre du cercle
+seconds.X1 = ellipse.Width / 2;
+seconds.Y1 = ellipse.Height / 2;
+```
+
+Pour le point d'arrivé, nous allons avoir besoin d'un peu de trigonométrie!!
+Pour cela nous allons utiliser les fonctions mathématiques de C#, notamment "Math.PI" (qui donne la valeur de π) et "Math.Cos" et "Math.Sin" qui calcule le cosinus et le sinus d’un angle donné en radians.
+
+La méthode consiste à calculer les coordonnés "x" et "y" de ce point d’arrivée en fonction de l’angle que devrait avoir l’aiguille. Le "x" correspond au cosinus de l’angle exprimé en radians, le "y" correspond au sinus de l’angle exprimé en radians.
+Il nous faut donc l’angle en radians !
+Si je devais transposer le cercle de mon horloge au cercle trigonométrique j’aurais :
+- Lorsque l’aiguille pointe sur 3h, alors l’angle vaut 0 radian
+- Lorsque l’aiguille pointe sur le 12h, alors l’angle vaut π/2 radians
+- Lorsque l’aiguille pointe sur le 9h, alors l’angle vaut π radians
+- Lorsque l’aiguille des secondes pointe sur n secondes, alors l’angle vaut π/2-(n * π/30) radians
+- etc…
+
+
