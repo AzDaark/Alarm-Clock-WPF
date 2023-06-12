@@ -89,6 +89,9 @@ Je te donne le code pour l'aiguille des secondes. En même temps que tu le copie
 
 Comme je te le disais plus haut, lorsque l’aiguille des secondes pointe sur n secondes, alors l’angle ne vaut pas juste n * π/30 mais π/2-(n * π/30) radians (c'est parce que l'origine du cercle est à droite et que le sens de rotation est inverse par rapport au sens des aiguilles). N'hésite pas à faire un dessin pour comprendre.
 
+<img src="./img/cercle_trigo.png" width="30%"/>
+
+
 ```
 //Je définis la longueur de l'aiguille, je pourrais mettre une autre valeur
 double longueurAiguilleSeconde = ellipse.Width/2; 
