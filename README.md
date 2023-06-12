@@ -1,6 +1,6 @@
 # TPIHM5 - Alarm Clock
 
-Dans ce TP, nous allons développer une application un peu plus visuelle et interactive à l'aide des fonctionnalités graphiques de WPF, de l'utilisation d'un timer et du multi-fenêtrage.
+Dans ce TP, nous allons développer une application un peu plus visuelle et interactive à l'aide des fonctionnalités graphiques de WPF et de l'utilisation d'un timer.
 
 ## Travail à rendre
 A la fin des deux séances (un total de 4 heures de travail), vous devrez soumettre votre projet à l'aide de travo.
@@ -8,16 +8,35 @@ A la fin des deux séances (un total de 4 heures de travail), vous devrez soumet
 ## Le sujet
 S'il y a bien une chose que les étudiants détestent dans la vie, c'est d'arriver en retard en cours d'IHM. Afin de pallier à ce problème, la direction de l'IUT vous demande de réaliser une application horloge permettant de configurer des alarmes.
 
+Voici la maquette de ce que nous devrions avoir :
+
+<img src="./img/alarm.png" width="50%"/>
+
 Les fonctionnalités attendues sont les suivantes :
 - Afficher une liste des alarmes actives
 - Ajouter et supprimer une alarme 
 - Dessiner une horloge et ses 3 aiguilles à l'aide des méthodes de dessin de WPF pour afficher l'heure en temps réel.
 - Déclencher automatiquement un signal visuel (un changement de couleur) ou sonore (jouer un son) lorsque l'heure est celle d'une des alarmes de la liste.
 - Interrompre l'alarme (le signal visual ou sonore) pour remettre l'application dans son état normal
+- Ajouter votre touche personnelle
 
-Voici la maquette de ce que nous devrions avoir :
+## Récupérer le projet à l'aide de travo
 
-<img src="./img/alarm.png" width="50%"/>
+Pour récupérer le projet et le soumettre à la fin de la séance, vous allez devoir utiliser travo.
+travo est un ensemble de scripts Python maintenu par des enseignants-chercheurs de Paris-Saclay et du Québec facilitant l'utilisation de GIT pour les enseignants. En fait les commandes travo effectuent un ensemble de commande GIT pour vous.
+A l'aide d'un terminal PowerShell, tapez la commande suivante pour récupérer le projet :
+```
+travow fetch https://git.iut-orsay.fr/tpihm/tpihm5
+```
+
+Il vous sera demandé vos identifiants ADONIS (de l'IUT) puis le projet sera téléchargé sur votre ordinateur (dans le répertoire "tpihm5"). Si vous êtes à l'aise avec GIT, vous pouvez voir qu'en réalité, vous allez travailler sur un fork (une copie dans votre espace) du projet de l'enseignant. Vous pouvez effectuer vous mêmes les commit et les push dans votre fork, mais il est plus simple d'utiliser les commandes travo pour l'instant.
+Sauvegarder ou soumettre votre travail se fera donc ensuite à l'aide de la commande :
+```
+travow submit tpihm5
+```
+
+Vous pouvez faire autant de "submit" que vous voulez. C'est une bonne pratique pour ne pas perdre votre travail.
+
 
 ### Ajouter un Timer
 
@@ -91,6 +110,7 @@ Comme je te le disais plus haut, lorsque l’aiguille des secondes pointe sur n 
 
 <img src="./img/cercle_trigo.png" width="30%"/>
 
+Enfin, le rayon du cercle trigonométrique est 1. Mais la longueur des aiguilles peut être différente. C'est pourquoi je multiplie à la fin la distance obtenue entre 0 et 1 par la longueur que je souhaite pour mon aiguille. 
 
 ```
 //Je définis la longueur de l'aiguille, je pourrais mettre une autre valeur
@@ -98,3 +118,5 @@ double longueurAiguilleSeconde = ellipse.Width/2;
 seconds.X2 = ellipse.Width / 2 + Math.Cos(15 * Math.PI / 30 - DateTime.Now.Second * Math.PI / 30) * longueurAiguilleSeconde;
 seconds.Y2 = ellipse.Height / 2 + Math.Sin(-15 * Math.PI / 30 + DateTime.Now.Second * Math.PI / 30) * longueurAiguilleSeconde;
 ```
+
+
