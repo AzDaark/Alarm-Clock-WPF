@@ -45,14 +45,14 @@ Les fonctionnalités attendues sont les suivantes :
 > Enfin, pour récupérer le projet, il vous suffit de taper la commande :
 > 
 > ```
-> python travoIHM.py fetch tpihm4
+> python travoIHM.py fetch tpihm5
 > ```
 > 
-> Il vous sera demandé vos identifiants ADONIS (de l'IUT) puis le projet sera téléchargé sur votre ordinateur (dans le répertoire "tpihm4"). 
+> Il vous sera demandé vos identifiants ADONIS (de l'IUT) puis le projet sera téléchargé sur votre ordinateur (dans le répertoire "tpihm5"). 
 > 
 > Sauvegarder ou soumettre votre travail à l'enseignant se fera à l'aide de la commande : 
 > ```
-> python travoIHM.py submit tpihm4 ####
+> python travoIHM.py submit tpihm5 ####
 > ```
 > Il vous faut remplacer #### par votre identifiant de groupe **tp2a** ou **tp2b** etc... Ne vous trompez pas de groupe, ce sera des points en moins
 > 
