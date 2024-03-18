@@ -6,7 +6,7 @@ In this lab, we'll develop a more visual and interactive application using WPF's
 At the end of the two sessions (a total of 4 hours' work), you'll be asked to submit your project using **travo**.
 
 ## The topic
-If there's one thing students hate in life, it's being late for HMI class. To alleviate this problem, the IUT management has asked you to create a clock application for setting alarms.
+If there's one thing students hate in life, it's being late for their HMI class. To alleviate this problem, the IUT management has asked you to create a clock application for setting alarms.
 
 Here's a mock-up of what we should have:
 
