@@ -69,6 +69,7 @@ The expected functionalities are as follows:
 > > Once the files have been added with the **git add** command, travo will take them into account during **submit**.
 
 </details>
+
 ### Add a Timer
 
 To add a Timer to your application, you need to do so from within the C# code. You can start by declaring an attribute of type "DispatcherTimer" in your class:
