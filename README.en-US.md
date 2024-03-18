@@ -149,9 +149,9 @@ Finally, the radius of the trigonometric circle is 1. But the length of the hand
 
 ```
 //I define the length of the hand, I could set another value
-double lengthNeedleSecond = ellipse.Width/2; 
-seconds.X2 = ellipse.Width / 2 + Math.Cos(15 * Math.PI / 30 - DateTime.Now.Second * Math.PI / 30) * lengthNeedleSecond;
-seconds.Y2 = ellipse.Height / 2 + Math.Sin(-15 * Math.PI / 30 + DateTime.Now.Second * Math.PI / 30) * lengthHandSecond;
+double lengthSecondsHand = ellipse.Width/2; 
+seconds.X2 = ellipse.Width / 2 + Math.Cos(15 * Math.PI / 30 - DateTime.Now.Second * Math.PI / 30) * lengthSecondsHand;
+seconds.Y2 = ellipse.Height / 2 + Math.Sin(-15 * Math.PI / 30 + DateTime.Now.Second * Math.PI / 30) * lengthSecondsHand;
 ```
 
 
