@@ -10,7 +10,7 @@ If there's one thing students hate in life, it's being late for HMI class. To al
 
 Here's a mock-up of what we should have:
 
-<img src="./img/alarm.png" width="30%"/>
+<img src="./img/Alarm-US.JPG" width="30%"/>
 
 The expected functionalities are as follows:
 - Display a list of active alarms
