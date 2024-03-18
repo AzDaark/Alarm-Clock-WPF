@@ -154,6 +154,7 @@ seconds.X2 = ellipse.Width / 2 + Math.Cos(15 * Math.PI / 30 - DateTime.Now.Secon
 seconds.Y2 = ellipse.Height / 2 + Math.Sin(-15 * Math.PI / 30 + DateTime.Now.Second * Math.PI / 30) * lengthHandSecond;
 ```
 
+
 <img src="./img/alarm.gif" width="30%"/>
 
 ### Submit your work
