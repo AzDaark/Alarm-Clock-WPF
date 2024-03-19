@@ -13,6 +13,7 @@ Here's a mock-up of what we should have:
 <img src="./img/Alarm-US.JPG" width="30%"/>
 
 The expected functionalities are as follows:
+- Display the time :wink:
 - Display a list of active alarms
 - Add and delete an alarm 
 - Draw a clock and its 3 hands using WPF drawing methods to display the time in real time.
