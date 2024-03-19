@@ -72,6 +72,7 @@ Les fonctionnalités attendues sont les suivantes :
 
 
 </details>
+
 ### Ajouter un Timer
 
 Pour ajouter un Timer dans votre application, vous devez le faire depuis le code C#. Vous pouvez commencer par déclarer un attribut de votre classe du type "DispatcherTimer" :
@@ -79,7 +80,7 @@ Pour ajouter un Timer dans votre application, vous devez le faire depuis le code
  DispatcherTimer timer;
 ```
 
-Et ensuite, dans votre méthode d'initialisation (par exemple la procédure événementielle associée à l'événement "Loaded" de la fenêtre), vous pouvez initialiser ton timer : 
+Et ensuite, dans votre méthode d'initialisation (par exemple la procédure événementielle associée à l'événement "Loaded" de la fenêtre), vous pouvez initialiser votre timer : 
 ```
 timer = new DispatcherTimer();
 //Définit combien de secondes entre chaque déclenchement de l'événement Tick 
