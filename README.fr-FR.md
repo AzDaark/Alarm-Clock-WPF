@@ -13,8 +13,10 @@ Voici la maquette de ce que nous devrions avoir :
 <img src="./img/alarm.png" width="30%"/>
 
 Les fonctionnalités attendues sont les suivantes :
-- Afficher une liste des alarmes actives
-- Ajouter et supprimer une alarme 
+- Afficher l'heure :wink:
+- Afficher une liste des alarmes
+- Ajouter et supprimer une alarme
+  - Pour supprimer une alarme, il faudra l'avoir sélectionnée dans la liste 
 - Dessiner une horloge et ses 3 aiguilles à l'aide des méthodes de dessin de WPF pour afficher l'heure en temps réel.
 - Déclencher automatiquement un signal visuel (un changement de couleur) ou sonore (jouer un son) lorsque l'heure est celle d'une des alarmes de la liste.
 - Interrompre l'alarme (le signal visual ou sonore) pour remettre l'application dans son état normal
