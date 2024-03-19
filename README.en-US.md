@@ -20,7 +20,7 @@ The expected functionalities are as follows:
 - Draw a clock and its 3 hands using WPF drawing methods to display the time in real time.
 - Automatically trigger a visual signal (a color change) or sound (play a sound) when the time is that of one of the alarms in the list.
 - Interrupt the alarm (visual or sound signal) to return the application to its normal state.
-- Add your personal touch
+- Add your personal touch.
 
 ## (1) Retrieve the project using **travo**
 <details>
