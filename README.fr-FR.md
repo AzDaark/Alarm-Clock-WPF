@@ -14,7 +14,7 @@ Voici la maquette de ce que nous devrions avoir :
 
 Les fonctionnalités attendues sont les suivantes :
 - Afficher l'heure :wink:
-- Afficher une liste des alarmes
+- Afficher une liste des alarmes (l'heure, avec ou sans la date)
 - Ajouter et supprimer une alarme
   - Pour supprimer une alarme, il faudra l'avoir sélectionnée dans la liste 
 - Dessiner une horloge et ses 3 aiguilles à l'aide des méthodes de dessin de WPF pour afficher l'heure en temps réel.
