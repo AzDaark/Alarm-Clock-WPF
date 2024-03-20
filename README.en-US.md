@@ -14,8 +14,8 @@ Here's a mock-up of what we should have:
 
 The expected functionalities are as follows:
 - Display the time :wink:
-- Display a list of alarms
-- Add and delete an alarm 
+- Display a list of alarms (times, with ou without a date).
+- Add and delete an alarm.
     - To delete an alarm, it must be selected in the list.
 - Draw a clock and its 3 hands using WPF drawing methods to display the time in real time.
 - Automatically trigger a visual signal (a color change) or sound (play a sound) when the time is that of one of the alarms in the list.
