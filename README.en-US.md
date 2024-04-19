@@ -113,7 +113,8 @@ ellipse = new Ellipse();
 CNVClock.Children.Add(ellipse);
 ellipse.Width = 300;
 ellipse.Height = 300;
-ellipse.Stroke = Brushes.Gray; ellipse.StrokeThickness = 1;
+ellipse.Stroke = Brushes.Gray; 
+ellipse.StrokeThickness = 1;
 ```
 For the clock hands, we need to define the line origin (X1,Y1) and end point (X2,Y2).
 
