@@ -131,7 +131,7 @@ seconds.Y1 = ellipse.Height / 2;
 For the end point, we're going to need a bit of trigonometry!
 For this, we're going to use C#'s mathematical functions, in particular "Math.PI" (which gives the value of π) and "Math.Cos" and "Math.Sin", which calculate the cosine and sine of a given angle in radians.
 
-The method consists in calculating the "x" and "y" coordinates of this arrival point as a function of the angle the hand should have. The "x" corresponds to the cosine of the angle expressed in radians, the "y" corresponds to the sine of the angle expressed in radians, quite simply.
+The method consists in calculating the "x" and "y" coordinates of this end point as a function of the angle the hand should have. The "x" corresponds to the cosine of the angle expressed in radians, the "y" corresponds to the sine of the angle expressed in radians, quite simply.
 So we need the angle in radians and we're done!
 
 How do I find it?
