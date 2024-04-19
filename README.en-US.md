@@ -121,7 +121,8 @@ For the clock hands, we need to define the line origin (X1,Y1) and end point (X2
 ```
 seconds = new Line();
 CNVClock.Children.Add(seconds);
-seconds.Stroke = Brushes.Red; seconds.StrokeThickness = 1;
+seconds.Stroke = Brushes.Red; 
+seconds.StrokeThickness = 1;
 //The point of origin is at the center of the circle
 seconds.X1 = ellipse.Width / 2;
 seconds.Y1 = ellipse.Height / 2;
