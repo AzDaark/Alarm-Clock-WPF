@@ -84,7 +84,7 @@ And then, in your initialization method (for example, the event procedure associ
 timer = new DispatcherTimer();
 //Defines the number of seconds between each triggering of the Tick event 
 timer.Interval = TimeSpan.FromSeconds(1);
-//Associates an event procedure with the timer's Tick event, you need to write this event procedure
+//Associates an event procedure with the timer's Tick event, you'll need to write this event procedure.
 timer.Tick += timer_Tick;
 //Launches the timer, otherwise nothing happens
 timer.Start();
