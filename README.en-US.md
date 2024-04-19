@@ -72,7 +72,7 @@ The expected functionalities are as follows:
 
 </details>
 
-### Add a Timer
+### Adding a Timer
 
 To add a Timer to your application, you need to do so from within the C# code. You can start by declaring an attribute of type "DispatcherTimer" in your class:
 ```
