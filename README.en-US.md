@@ -44,7 +44,7 @@ The expected functionalities are as follows:
 > 
 > If you type the **ls** command, you should see the **travoIHM.py** script you downloaded earlier in the list of files in this directory (of course, you can work in a directory other than the root of the Z: directory).
 > 
-> Finally, to retrieve the project, simply type the command :
+> To retrieve the project, simply type the command :
 > 
 > ```
 > python travoIHM.py fetch tpihm5
