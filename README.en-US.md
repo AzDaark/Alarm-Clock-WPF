@@ -52,9 +52,9 @@ The expected functionalities are as follows:
 > 
 > You will be asked for your ADONIS (IUT) login information, and the project will be downloaded to your computer (in the "tpihm2" directory). If an authentication window opens after you've already entered your information in the Powershell terminal, you can close it.
 > 
-> Save or submit your work to your teacher with the command : 
+> Saving or submitting your work to your teacher will be done with the command : 
 > ```
-> python travoIHM.py submit tpihm4 ####
+> python travoIHM.py submit tpihm5 ####
 > ```
 > You need to replace #### with your group ID **tp2a** or **tp2b** etc... Don't enter the wrong group, you'll lose points (if you've made a mistake, you can resubmit with the correct group and travo will correct the error, so don't panic).
 > 
