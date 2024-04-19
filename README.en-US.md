@@ -90,7 +90,7 @@ timer.Tick += timer_Tick;
 timer.Start();
 ```
 
-In the "timer_Tick" event procedure code, this is where you change the coordinates of the clock hands, and check whether an alarm should be triggered.
+It is in the "timer_Tick" event procedure code that you will change the coordinates of the clock hands and check whether an alarm should be triggered.
 
 ### Drawing the clock
 To draw the clock correctly, we're going to need to use a little trigonometry!
