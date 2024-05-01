@@ -50,7 +50,7 @@ The expected functionalities are as follows:
 > python travoIHM.py fetch tpihm5
 > ```
 > 
-> You will be asked for your ADONIS (IUT) login information, and the project will be downloaded to your computer (in the "tpihm2" directory). If an authentication window opens after you've already entered your information in the Powershell terminal, you can close it.
+> You will be asked for your ADONIS (IUT) login information, and the project will be downloaded to your computer (in the "tpihm5" directory). If an authentication window opens after you've already entered your information in the Powershell terminal, you can close it.
 > 
 > Saving or submitting your work to your teacher will be done with the command : 
 > ```
