@@ -35,8 +35,8 @@ Les fonctionnalités attendues sont les suivantes :
 > > pip install travo
 > > ```
 > 
-> Sur l'ordinateur de l'IUT, rendez-vous dans le répertoire C:\WinPython et lancer le programme "WinPython Powershell Prompt.exe", un terminal Powershell va s'ouvrir, prêt à recevoir des commandes Python.
-> A l'intérieur de ce terminal PowerShell, tapez d'abord la commande suivante, vous permettant de vous déplacer dans > votre espace personnel :
+> Sur l'ordinateur de l'IUT (sous Windows), vous trouverez sur le bureau un raccourci pour ouvrir le terminal de commande PowerShell configuré pour utiliser Python. Double-cliquez simplement sur le raccourci sur le bureau "Powershell WinPython", un terminal Powershell va s'ouvrira, prêt à recevoir des commandes Python.
+> A l'intérieur de ce terminal PowerShell, vous pouvez taper des commandes similaires à celles que l'on tape dans un terminal sous Linux. tapez d'abord la commande suivante, vous permettant de vous déplacer dans votre espace personnel si vous n'y êtes pas déjà :
 > 
 > ```
 > cd Z:\
