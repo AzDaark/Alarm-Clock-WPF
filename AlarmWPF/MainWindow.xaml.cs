@@ -10,6 +10,8 @@ using System.Media;
 
 namespace AlarmWPF
 {
+
+    // MICHAEL BORRHOMEE 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
