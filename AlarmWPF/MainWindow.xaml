@@ -5,7 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AlarmWPF"
         mc:Ignorable="d"
-        Title="Alarme" Height="400" Width="600">
-    <Grid>
+        Title="Alarme" Height="400" Width="600" Loaded="Window_Loaded">
+    <Grid x:Name="mainGrid" RenderTransformOrigin="0.393,0.507">
+        <Canvas x:Name="CNVClock" Width="300" Margin="265,10,35,110"/>
+        <TextBlock  
+                   FontSize="36" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Foreground="White"/>
+        <ListBox x:Name="LB_reveils" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="51,50,391,201"/>
+        <TextBox x:Name="TXB_hours" HorizontalAlignment="Left" Margin="69,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.441,0.358" TextChanged="TXB_hours_TextChanged"/>
+        <TextBox x:Name="TXB_minutes" HorizontalAlignment="Left" Margin="142,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" TextChanged="TXB_minutes_TextChanged"/>
+        <Button x:Name="BTN_Add" Content="Add" HorizontalAlignment="Left" Margin="40,240,0,0" VerticalAlignment="Top" Width="81" Click="BTN_Add_Click"/>
+        <Button x:Name="BTN_Remove" Content="Remove" HorizontalAlignment="Left" Margin="151,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.484,0.432" Width="74" Click="BTN_Remove_Click"/>
+        <Separator HorizontalAlignment="Left" Margin="116,210,0,0" VerticalAlignment="Top"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="124,188,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
